@@ -1,0 +1,249 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#nav {
+    position: sticky;
+    display: flex;
+
+}
+.logo .im{
+    display: block;
+
+
+}
+.logo img{
+    height: 30px;
+    position: relative;
+    top: 2px;
+}
+#nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    text-decoration: none;
+}
+.center{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav ul li a:hover{
+    border-radius: 3px;
+    /* animation: hover 2s end 0s 1  normal forwards; */
+    animation-name: hover;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes hover{
+    0%{
+
+
+    }
+    10%{
+        color: rgb(59, 38, 179);
+        background-color: white;
+    
+    }
+
+    100%{
+        color: rgb(59, 38, 179);
+        background-color: white;
+    
+    }
+}
+#nav ul li {
+    list-style: none;
+    margin-left:9px ;
+    font-size:1.4rem ;
+    
+}
+#nav .sear{
+    position: absolute;
+    float: right;
+    top: 3px;
+    right: 23px;
+    display: flex;
+    
+}
+#nav .Search{
+    /* background-color: rgb(59, 38, 179); */
+    border: 1px solid blue;
+    border-radius: 5px;
+
+
+
+}
+#nav .sear img{
+margin: 2px;
+    height: 20px;
+
+}
+
+#nav::before{
+    content: "";
+    background-color: rgb(59, 38, 179);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* all */
+.btn{
+    background-color: blueviolet;
+    border-radius: 4px;
+margin: 3px;
+}
+
+.btn:hover{
+    background-color: rgb(201, 156, 226);
+    
+}
+.btn:hover a{
+    color:  blueviolet;
+}
+
+
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+/* numbers */
+#num h1{
+    color: rgb(28, 41, 228);
+    font-size: 2rem;
+}
+#num h2{
+    color: rgb(57, 65, 177);
+}
+#num .box1{
+    width: 50%;
+    border: 2px solid blue;
+}
+#num .num_first{
+    display: flex;
+    flex-direction: column;
+}
+#num .num_first p{ 
+    color: rgb(7, 59, 83);
+}
+
+#num::before{
+    content: "";
+    background: url('img/number/bg1.jpg') ;
+    /* background-image: url('img/number/bg1.jpg'); */
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* number game  */
+#num_game_first .main{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#num_game_first .main img{
+    margin: 10px;
+    height: 100px;
+}
+#num_game_first .main img:hover{
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+   
+} 
+@keyframes zoom{
+    0%{
+        height:150px;
+    }
+    
+    
+    100%{
+        height:200px;
+    }
+}
+
+#num_game_first h1{
+    background-color: rgb(71, 117, 255);
+    color: azure;
+    animation: ainih1 2s forwards 0s;
+    position: relative;
+    top: -100%;
+    left: -100%;
+    margin: 15px 12px;
+    border-radius: 3px;
+
+    
+}
+@keyframes ainih1{
+    from{
+        
+top: -100%;        
+left: 100%;
+}
+to{
+        top: 0%;        
+        left: 0%;
+               
+    }
+
+}
+
+.to100{
+    border: 2px solid blueviolet;
+    animation: ani1 2s forwards 2s;
+    display: flex;
+flex-direction: column;
+position: relative;
+top: -100%;
+left: -100%;
+margin: 5px 10px;
+border-radius: 4px;
+background-color: rgb(240, 224, 255);
+}
+@keyframes ani1{
+    from{
+        
+        top: -100%;
+        left: -100%;
+        
+    }
+    to{
+        top: 0px;
+        left: 0px;
+        
+    }
+}
+.to100:hover{
+    background-color: rgb(218, 184, 250);
+}
+
+.to100 a {
+    text-decoration: none;
+    color: blue;
+
+}
+/*
+.png{
+    height: 30px;
+    width: 30px;
+} */

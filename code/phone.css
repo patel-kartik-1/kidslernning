@@ -1,0 +1,19 @@
+#mainnav ul{
+    justify-content: center;
+}
+#mainnav{
+    flex-direction: column;
+    
+}
+#nav{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#nav .sear{
+float: left;
+left: 0px;
+}
+body{
+    /* background-color: yellow; */
+}
